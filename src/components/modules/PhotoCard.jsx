@@ -1,7 +1,7 @@
 import React from 'react';
 import './PhotoCard.css';
 
-export default function PhotoCard({ src, caption }) {
+const PhotoCard = ({ src, caption }) => {
   return (
     <figure className="photo-card">
       <img src={src} alt={caption} loading="lazy" />
@@ -9,3 +9,5 @@ export default function PhotoCard({ src, caption }) {
     </figure>
   );
 }
+
+export default PhotoCard;

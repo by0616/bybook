@@ -1,7 +1,7 @@
 import React from 'react';
-import Gallery from './pages/Gallery';
+import Gallery from './components/pages/Gallery';
 
-export default function App() {
+const App = () => {
   return (
     <div className="app">
       <header className="site-header">
@@ -14,3 +14,5 @@ export default function App() {
     </div>
   );
 }
+
+export default App;

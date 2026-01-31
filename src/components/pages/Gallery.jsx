@@ -1,5 +1,5 @@
 import React from 'react';
-import PhotoCard from '../components/PhotoCard';
+import PhotoCard from '../modules/PhotoCard';
 import './Gallery.css';
 
 const photos = [
@@ -10,7 +10,7 @@ const photos = [
   { id: 5, src: 'https://picsum.photos/id/1035/600/400', caption: 'City' },
 ];
 
-export default function Gallery() {
+const Gallery = () => {
   return (
     <div className="gallery-grid">
       {photos.map((p) => (
@@ -19,3 +19,5 @@ export default function Gallery() {
     </div>
   );
 }
+
+export default Gallery;

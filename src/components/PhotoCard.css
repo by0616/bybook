@@ -1,5 +1,0 @@
-.photo-card { background: white; 
-    border-radius: 8px; 
-    padding: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.08); overflow: hidden; }
-.photo-card img { width: 100%; height: auto; display: block; border-radius: 6px; }
-.photo-card figcaption { margin-top: 0.5rem; font-size: 0.9rem; text-align: center; color: #444; }
