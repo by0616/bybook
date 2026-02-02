@@ -1,8 +1,8 @@
 .NavBar-container {
     position: fixed; /* keep it persistent */
-    top: var(--m);
-    right: var(--m);
-    z-index: 1000;
+    top: var(--l);
+    right: var(--l);
+    z-index:900;
 
     display: flex;
     gap: var(--s);
@@ -16,35 +16,19 @@
     font-family: inherit;
 
     /* subtle elevation */
-    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    box-shadow: 0 6px 18px #00000033;
 }
 
 .NavBar-link {
-    list-style: none;
-}
-
-.NavBar-link a {
-    color: var(--tea-green); /* tea green text */
+    color: var(--tea-green);
+    opacity: 0.6;
     text-decoration: none;
-    padding: 0.25rem 0.5rem;
-    border-radius: 6px;
-    transition: color 150ms ease, background-color 150ms ease, transform 150ms ease;
-    font-weight: 500;
 }
 
-.NavBar-link a:hover,
-.NavBar-link a:focus {
-    color: rgba(199,249,204,0.85); /* slightly dimmer tea-green on hover */
-    transform: translateY(-1px);
-    outline: none;
+.NavBar-link:hover {
+    opacity: 1;
 }
 
-/* Ensure the NavBar is responsive on smaller screens */
-@media (max-width: 480px) {
-  .NavBar-container {
-    top: var(--s);
-    right: var(--s);
-    padding: var(--xs) var(--s);
-    border-radius: 10px;
-  }
+.NavBar-link + .NavBar-link {
+  margin-left: var(--s);
 }

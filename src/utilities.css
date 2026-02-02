@@ -20,3 +20,41 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.u-flex {
+  display: flex;
+}
+
+.u-flex-justifyCenter {
+  justify-content: center;
+}
+
+.u-flex-alignCenter {
+  align-items: center;
+}
+
+.u-inlineBlock {
+  display: inline-block;
+}
+
+.u-bold {
+  font-weight: 600;
+}
+
+.u-textCenter {
+  text-align: center;
+}
+
+.u-pointer {
+  cursor: pointer;
+}
+
+.u-link {
+  color: var(--primary);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.u-link:hover {
+  color: var(--primary--dim);
+}
