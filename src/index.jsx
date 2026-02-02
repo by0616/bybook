@@ -1,6 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+
 import App from './components/App';
+import Home from './components/pages/Home';
+import About from './components/pages/About';
+import Blog from './components/pages/Blog';
+import Gallery from './components/pages/Gallery';
+import NotFound from './components/pages/NotFound';
 
 import {
   createBrowserRouter,
@@ -13,7 +19,10 @@ import {
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route errorElement={<NotFound />} element={<App />}>
-      <Route path="/" element={<App />} />
+      <Route path="/" element={<Home />} />
+      <Route path="/about/" element={<About />} />
+      <Route path="/blog/" element={<Blog />} />
+      <Route path="/gallery/" element={<Gallery />} />
     </Route>
   )
 );

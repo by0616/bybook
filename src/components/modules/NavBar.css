@@ -1,0 +1,50 @@
+.NavBar-container {
+    position: fixed; /* keep it persistent */
+    top: var(--m);
+    right: var(--m);
+    z-index: 1000;
+
+    display: flex;
+    gap: var(--s);
+    align-items: center;
+
+    padding: var(--s) var(--m);
+    background-color: var(--baltic-blue); /* baltic blue background */
+    border-radius: 12px; /* round-cornered rectangle */
+
+    /* Use the utilities font (inherits from body) */
+    font-family: inherit;
+
+    /* subtle elevation */
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.NavBar-link {
+    list-style: none;
+}
+
+.NavBar-link a {
+    color: var(--tea-green); /* tea green text */
+    text-decoration: none;
+    padding: 0.25rem 0.5rem;
+    border-radius: 6px;
+    transition: color 150ms ease, background-color 150ms ease, transform 150ms ease;
+    font-weight: 500;
+}
+
+.NavBar-link a:hover,
+.NavBar-link a:focus {
+    color: rgba(199,249,204,0.85); /* slightly dimmer tea-green on hover */
+    transform: translateY(-1px);
+    outline: none;
+}
+
+/* Ensure the NavBar is responsive on smaller screens */
+@media (max-width: 480px) {
+  .NavBar-container {
+    top: var(--s);
+    right: var(--s);
+    padding: var(--xs) var(--s);
+    border-radius: 10px;
+  }
+}

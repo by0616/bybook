@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import './NavBar.css';
 
 /**
  * The navigation bar at the top of all pages. Takes no props.
@@ -9,7 +10,7 @@ const NavBar = () => {
     { name: "Home", path: "/" },
     { name: "About", path: "/about/" },
     { name: "Blog", path: "/blog/" },
-    { name: "Gallery", path: "/Gallery" }
+    { name: "Gallery", path: "/gallery/" }
   ]
 
   return (
