@@ -12,10 +12,13 @@ const photos = [
 
 const Gallery = () => {
   return (
-    <div className="gallery-grid">
-      {photos.map((p) => (
-        <PhotoCard key={p.id} src={p.src} caption={p.caption} />
-      ))}
+    <div>
+    <h1>Gallery</h1>
+      <div className="gallery-grid">
+        {photos.map((p) => (
+          <PhotoCard key={p.id} src={p.src} caption={p.caption} />
+        ))}
+      </div>
     </div>
   );
 }
