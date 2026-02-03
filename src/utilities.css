@@ -50,7 +50,6 @@ body {
 }
 
 .u-link {
-  color: var(--primary);
   text-decoration: none;
   cursor: pointer;
 }
