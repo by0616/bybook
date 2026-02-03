@@ -1,0 +1,10 @@
+.FooterContainer {
+    background-color: var(--prussian-blue);
+    margin-top: auto;
+    padding: var(--m);
+}
+
+.FooterText {
+    color: var(--alabaster-grey);
+    font-size: 0.9rem;
+}

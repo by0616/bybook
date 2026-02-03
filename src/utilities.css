@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
-  --baltic-blue: #22577aff;
-  --tropical-teal: #38a3a5ff;
-  --emerald: #57cc99ff;
-  --light-green: #80ed99ff;
-  --tea-green: #c7f9ccff;
+  --ink-black: #0d1b2aff;
+  --prussian-blue: #1b263bff;
+  --dusk-blue: #415a77ff;
+  --dusty-denim: #778da9ff;
+  --alabaster-grey: #e0e1ddff;
 
 
   --xs: 4px;
@@ -15,10 +15,15 @@
 }
 
 body {
+  background-color: var(--alabaster-grey);
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   margin: 0;
   padding: 0;
+}
+
+form {
+  flex-grow: 1;
 }
 
 .u-flex {
