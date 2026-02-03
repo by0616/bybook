@@ -8,6 +8,11 @@
   --dusty-denim: #778da9ff;
   --alabaster-grey: #e0e1ddff;
   --nav-width: 72px;
+  --radius-m: 12px;
+  --radius-l: 18px;
+  --gallery-gap: 16px;
+  --shadow-soft: 0 12px 30px rgba(13, 27, 42, 0.12);
+  --shadow-tight: 0 6px 18px rgba(13, 27, 42, 0.16);
 
 
   --xs: 4px;
