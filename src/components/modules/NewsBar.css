@@ -1,6 +1,6 @@
 .NewsBar {
-  background: #ffffff;
-  border-left: 4px solid var(--tropical-teal);
+  background: var(--white);
+  border-left: var(--xs) solid var(--tropical-teal);
   padding: 0.5rem 1rem;
   border-radius: 10px;
 
