@@ -30,18 +30,15 @@
   display: inline-flex;
   align-items: center;
   gap: 0.75rem;
-  text-decoration: none;
   padding: 0.375rem 0.6rem;
   border-radius: 8px;
   min-width: 220px;
   color: var(--baltic-blue);
-  transition: color 140ms ease, transform 120ms ease;
   font-weight: 600;
-  background: transparent;
+  text-decoration: none;
 }
 
 .NewsBar-item:hover {
-  color: var(--light-green);
   transform: translateY(-2px);
 }
 
@@ -53,13 +50,5 @@
   flex-shrink: 0;
 }
 
-.NewsBar-title { font-size: 0.98rem; }
-
-@media (max-width: 480px) {
-  .NewsBar {
-    padding: 0.4rem 0.6rem;
-    border-radius: 8px;
-  }
-  .NewsBar-label { min-width: 100px; }
-  .NewsBar-item { min-width: 160px; font-size: 0.95rem; }
-}
+.NewsBar-title { 
+    font-size: 1rem; }

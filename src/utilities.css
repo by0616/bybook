@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
+  --white: #ffffff;
   --ink-black: #0d1b2aff;
   --prussian-blue: #1b263bff;
   --dusk-blue: #415a77ff;
   --dusty-denim: #778da9ff;
   --alabaster-grey: #e0e1ddff;
+  --nav-width: 72px;
 
 
   --xs: 4px;

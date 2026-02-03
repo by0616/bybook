@@ -7,7 +7,12 @@
 .App-container {
   flex: 1;
   padding: var(--l) var(--l);
+  padding-right: calc(var(--l) + var(--nav-width));
   max-width: 960px;
   margin: 0 auto;
   width: 100%;
+}
+
+@media (max-width: 640px) {
+  .App-container { padding-right: var(--l); }
 }

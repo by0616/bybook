@@ -10,13 +10,13 @@
 
     padding: var(--s) var(--m);
     background-color: var(--prussian-blue);
-    border-radius: 12px; /* round-cornered rectangle */
+    border-radius: 10px; /* round-cornered rectangle */
 
     /* Use the utilities font (inherits from body) */
     font-family: inherit;
 
     /* subtle elevation */
-    box-shadow: 0 6px 18px #00000033;
+    box-shadow: 0 var(--s) var(--m) #00000033;
 }
 
 .NavBar-link {
