@@ -58,3 +58,38 @@
 .NavBar-toggle:hover {
     opacity: 0.8;
 }
+
+@media (max-width: 900px) {
+    .NavBar-container {
+        padding: var(--s);
+    }
+
+    .NavBar-link {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .NavBar-stack {
+        top: auto;
+        bottom: var(--m);
+        right: 50%;
+        transform: translateX(50%);
+        align-items: center;
+    }
+
+    .NavBar-container {
+        flex-direction: row;
+        gap: var(--m);
+        padding: var(--s) var(--m);
+    }
+
+    .NavBar-link + .NavBar-link {
+        margin-left: 0;
+    }
+
+    .NavBar-toggle {
+        width: 100%;
+        text-align: center;
+    }
+}

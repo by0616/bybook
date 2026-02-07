@@ -150,6 +150,7 @@ body.theme-dark .gallery-stats {
   .gallery-hero {
     flex-direction: column;
     align-items: flex-start;
+    padding: var(--m);
   }
 
   .gallery-stats {
@@ -165,6 +166,10 @@ body.theme-dark .gallery-stats {
 @media (max-width: 640px) {
   .gallery-hero h1 {
     font-size: 2rem;
+  }
+
+  .gallery-hero {
+    padding: var(--s);
   }
 
   .gallery-lightbox__panel {
