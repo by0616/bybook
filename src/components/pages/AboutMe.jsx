@@ -7,7 +7,7 @@ import stefanieImg from "../../images/stefanie.jpg";
 const sections = [
   {
     id: "luka",
-    title: "Luka Donkic",
+    title: "Luka Dončić",
     text:
       "I've been a fan of the NBA since 2021, and I love hooping. I support several teams, with the 2024 Mavericks and the 2025 Nuggets being my top picks. Luka has really impressed me with his incredible three-point shooting and his leadership on the court. Now he is a Laker and I wish him win the Championship and MVP one day.",
     image: lukaImg,
