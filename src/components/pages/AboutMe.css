@@ -1,10 +1,10 @@
 .AboutMe-shell {
-  color: var(--ink-black);
+  color: var(--text-primary);
 }
 
 .AboutMe-intro {
   margin: 0 0 var(--l);
-  color: var(--dusk-blue);
+  color: var(--text-muted);
   max-width: 720px;
   line-height: 1.6;
 }
@@ -19,7 +19,7 @@
   display: flex;
   gap: var(--l);
   align-items: stretch;
-  background: var(--white);
+  background: var(--surface-card);
   border-radius: var(--radius-l);
   box-shadow: var(--shadow-soft);
   padding: var(--m);
@@ -58,7 +58,7 @@
 
 .AboutMe-content p {
   margin: 0;
-  color: var(--dusk-blue);
+  color: var(--text-muted);
   line-height: 1.7;
 }
 

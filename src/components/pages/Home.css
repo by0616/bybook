@@ -1,9 +1,18 @@
-.HomeHero {
+.HomeScrollArea {
+    width: 100%;
+    min-height: 200vh;
+}
+
+.HomeSection {
+    min-height: 100vh;
     position: relative;
-    min-height: 60vh;
     display: grid;
     place-items: center;
     overflow: hidden;
+}
+
+.HomeHero {
+    background: transparent;
 }
 
 .HomeTitleWrap {
@@ -19,18 +28,74 @@
     text-transform: uppercase;
 }
 
-.HomeIntro {
-    margin: var(--m) auto 0;
-    color: var(--dusk-blue);
-    line-height: 1.6;
-    opacity: 0;
-    transform: translateY(10px);
-    transition: opacity 260ms ease, transform 260ms ease;
+.HomeDetail {
+    align-items: center;
+    padding: var(--l) 0;
+    gap: var(--l);
 }
 
-.HomeIntro.is-visible {
-    opacity: 1;
-    transform: translateY(0);
+.HomeIntroBlock {
+    width: min(720px, 90vw);
+    margin: 0 auto;
+    color: var(--ink-black);
+    line-height: 1.6;
+    text-align: center;
+    position: relative;
+    padding: var(--l) 0;
+}
+
+.HomeIntroLine {
+    display: block;
+    font-size: 1.35rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+}
+
+.HomeIntroBlock::before,
+.HomeIntroBlock::after {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border: 1px solid var(--stroke-faint);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.HomeIntroBlock::before {
+    left: -140px;
+}
+
+.HomeIntroBlock::after {
+    right: -140px;
+}
+
+.HomeIntroBlock p::before,
+.HomeIntroBlock p::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 120px;
+    background: linear-gradient(90deg, rgba(27, 38, 59, 0), var(--line-glow), rgba(27, 38, 59, 0));
+    top: 50%;
+}
+
+.HomeIntroBlock p::before {
+    left: -200px;
+}
+
+.HomeIntroBlock p::after {
+    right: -200px;
+}
+
+@media (max-width: 900px) {
+    .HomeIntroBlock::before,
+    .HomeIntroBlock::after,
+    .HomeIntroBlock p::before,
+    .HomeIntroBlock p::after {
+        display: none;
+    }
 }
 
 .HomeCover {
@@ -43,7 +108,7 @@
     position: absolute;
     width: 480px;
     height: 480px;
-    border: 1px solid rgba(65, 90, 119, 0.25);
+    border: 1px solid var(--stroke-faint);
     border-radius: 50%;
     animation: HomeFloat 12s ease-in-out infinite;
 }
@@ -62,7 +127,7 @@
 .HomeLine {
     position: absolute;
     height: 1px;
-    background: linear-gradient(90deg, rgba(27, 38, 59, 0), rgba(27, 38, 59, 0.35), rgba(27, 38, 59, 0));
+    background: linear-gradient(90deg, rgba(27, 38, 59, 0), var(--line-soft), rgba(27, 38, 59, 0));
     animation: HomeSweep 10s ease-in-out infinite;
 }
 

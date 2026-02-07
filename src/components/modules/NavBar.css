@@ -1,8 +1,16 @@
-.NavBar-container {
+.NavBar-stack {
     position: fixed; /* keep it persistent */
     top: var(--l);
     right: var(--l);
     z-index:900;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: var(--s);
+}
+
+.NavBar-container {
+    position: relative;
 
     display: flex;
     flex-direction: column;
@@ -10,18 +18,18 @@
     align-items: flex-end;
 
     padding: var(--s) var(--m);
-    background-color: var(--prussian-blue);
+    background-color: var(--nav-bg);
     border-radius: 10px; /* round-cornered rectangle */
 
     /* Use the utilities font (inherits from body) */
     font-family: inherit;
 
     /* subtle elevation */
-    box-shadow: 0 var(--s) var(--m) #00000033;
+    box-shadow: var(--shadow-nav);
 }
 
 .NavBar-link {
-    color: var(--alabaster-grey);
+    color: var(--nav-text);
     opacity: 1;
     text-decoration: none;
 }
@@ -33,4 +41,20 @@
 
 .NavBar-link + .NavBar-link {
   margin-left: var(--s);
+}
+
+.NavBar-toggle {
+    border: none;
+    background: var(--nav-bg);
+    color: var(--nav-text);
+    padding: var(--s) var(--m);
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: opacity 160ms ease;
+}
+
+.NavBar-toggle:hover {
+    opacity: 0.8;
 }
