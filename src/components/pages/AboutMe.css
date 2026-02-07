@@ -2,11 +2,6 @@
   color: var(--ink-black);
 }
 
-.AboutMe-title {
-  margin: 0 0 var(--s);
-  font-size: 2.4rem;
-}
-
 .AboutMe-intro {
   margin: 0 0 var(--l);
   color: var(--dusk-blue);

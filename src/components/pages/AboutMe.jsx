@@ -1,8 +1,8 @@
 import React from "react";
 import "./AboutMe.css";
 
-import lukaImg from "../../images/declan-sun-IeudDVfzH0o-unsplash.jpg";
-import stefanieImg from "../../images/maeva-vigier-Ji3yQIhI4bg-unsplash.jpg";
+import lukaImg from "../../images/luka.jpg";
+import stefanieImg from "../../images/stefanie.jpg";
 
 const sections = [
   {
@@ -27,7 +27,7 @@ const sections = [
 const AboutMe = () => {
   return (
     <div className="AboutMe-shell">
-      <h1 className="AboutMe-title">About Me</h1>
+      <h1 className="PageTitle">About Me</h1>
       <p className="AboutMe-intro">
         Welcome to the About Me page. Hope you can know me better.
       </p>

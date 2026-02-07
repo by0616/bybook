@@ -67,7 +67,7 @@ const Gallery = () => {
     <div className="gallery-shell">
       <div className="gallery-hero">
         <div>
-          <h1>Gallery</h1>
+          <h1 className="PageTitle">Gallery</h1>
           <p className="gallery-subtitle">
             Here are some pictures I like from Unsplash. Click to view and navigate with arrow keys or escape to exit.
           </p>
