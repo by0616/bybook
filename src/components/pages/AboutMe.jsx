@@ -3,25 +3,34 @@ import "./AboutMe.css";
 
 import lukaImg from "../../images/luka.jpg";
 import stefanieImg from "../../images/stefanie.jpg";
+import runningImg from "../../images/running.jpg";
 
 const sections = [
   {
-    id: "luka",
-    title: "Luka Dončić",
+    id: "basketball",
+    title: "NBA",
     text:
       "I've been a fan of the NBA since 2021, and I love hooping. I support several teams, with the 2024 Mavericks and the 2025 Nuggets being my top picks. Luka has really impressed me with his incredible three-point shooting and his leadership on the court. Now he is a Laker and I wish him win the Championship and MVP one day.",
     image: lukaImg,
-    imageAlt: "Warm light over a court-inspired scene",
+    imageAlt: "Luka",
   },
   {
-    id: "stefanie",
-    title: "Stefanie Sun",
+    id: "music",
+    title: "Music",
     text:
-      "I used to listen to English songs much in middles school, but Stefanie's songs have become my favorite. Her melodies are soothing and her lyrics are deeply meaningful. They resonated with me about life and emotions.",
+      "I used to listen to English songs much in middles school, such as pop like Swift and rap like Logic. Recently I've been diving into Chinese songs and Stefanie Sun's songs have become my favorite. Her melodies are soothing and her voice is fantastic. Moreover, Cheer Chen is an artist I really admire, whose unique poetic lyrics also touched me deeply.",
     image: stefanieImg,
-    imageAlt: "Soft, calm light as a music mood",
+    imageAlt: "Stefanie Sun",
     reverse: true,
   },
+  {
+    id: "running",
+    title: "Running",
+    text:
+    "I became a runner at 17, and running long distances along the Huangpu River has truly added excitement to my life. I've participated in several half marathons and am eager to take on more running events in the future. I’d love for you to join me in training or help keep me disciplined with some supervision!",
+    image: runningImg,
+    imageAlt: "Running City", 
+  }
 ];
 
 const AboutMe = () => {
