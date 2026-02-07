@@ -10,11 +10,27 @@
     position: relative;
     z-index: 2;
     text-align: center;
+    max-width: 720px;
+    padding: 0 var(--m);
 }
 
 .HomeTitle {
     letter-spacing: 0.12em;
     text-transform: uppercase;
+}
+
+.HomeIntro {
+    margin: var(--m) auto 0;
+    color: var(--dusk-blue);
+    line-height: 1.6;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 260ms ease, transform 260ms ease;
+}
+
+.HomeIntro.is-visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .HomeCover {
