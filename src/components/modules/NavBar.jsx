@@ -8,7 +8,7 @@ import './NavBar.css';
 const NavBar = () => {
   const NavList = [
     { name: "Home", path: "/" },
-    { name: "About", path: "/about/" },
+    { name: "About Me", path: "/aboutme/" },
     { name: "Blog", path: "/blog/" },
     { name: "Gallery", path: "/gallery/" }
   ]

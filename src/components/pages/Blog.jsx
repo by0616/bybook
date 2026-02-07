@@ -4,7 +4,8 @@ const Blog = () => {
   return (
     <div>
       <h1>Blog</h1>
-      <p>Welcome to the Blog page. Here we share our latest news and articles.</p>
+      <p>Welcome to the My Blog page.</p>
+      <hr className="BlogLine" />
     </div>
   );
 }

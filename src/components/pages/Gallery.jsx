@@ -67,11 +67,9 @@ const Gallery = () => {
     <div className="gallery-shell">
       <div className="gallery-hero">
         <div>
-          <p className="gallery-kicker">Bybook Gallery</p>
-          <h1>Find the quiet light.</h1>
+          <h1>Gallery</h1>
           <p className="gallery-subtitle">
-            A curated wall of moments from our community. Click any image to see it
-            at its original size with full clarity.
+            Here are some pictures I like from Unsplash. Click to view and navigate with arrow keys or escape to exit.
           </p>
         </div>
         <div className="gallery-stats">
