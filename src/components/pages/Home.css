@@ -1,3 +1,74 @@
+.HomeHero {
+    position: relative;
+    min-height: 60vh;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.HomeTitleWrap {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.HomeTitle {
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.HomeCover {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.HomeArc {
+    position: absolute;
+    width: 480px;
+    height: 480px;
+    border: 1px solid rgba(65, 90, 119, 0.25);
+    border-radius: 50%;
+    animation: HomeFloat 12s ease-in-out infinite;
+}
+
+.HomeArc--one {
+    top: -180px;
+    left: -120px;
+}
+
+.HomeArc--two {
+    bottom: -220px;
+    right: -140px;
+    animation-delay: 2s;
+}
+
 .HomeLine {
-    border-color: var(--ink-black);
+    position: absolute;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(27, 38, 59, 0), rgba(27, 38, 59, 0.35), rgba(27, 38, 59, 0));
+    animation: HomeSweep 10s ease-in-out infinite;
+}
+
+.HomeLine--one {
+    width: 70%;
+    top: 30%;
+    left: 15%;
+}
+
+.HomeLine--two {
+    width: 55%;
+    bottom: 28%;
+    left: 22%;
+    animation-delay: 1.5s;
+}
+
+@keyframes HomeFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(18px); }
+}
+
+@keyframes HomeSweep {
+    0%, 100% { opacity: 0.4; transform: translateY(0); }
+    50% { opacity: 0.8; transform: translateY(-8px); }
 }
