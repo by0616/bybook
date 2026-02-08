@@ -2,21 +2,21 @@ import React, { useEffect, useMemo, useState } from 'react';
 import PhotoCard from '../modules/PhotoCard';
 import './Gallery.css';
 
-import anastasiia from '../../assets/images/anastasiia-buchinskaia-GLbsWvBQk_8-unsplash.jpg';
-import dan from '../../assets/images/dan-begel-rTMMGtX482w-unsplash.jpg';
-import declan from '../../assets/images/declan-sun-IeudDVfzH0o-unsplash.jpg';
-import dmitry from '../../assets/images/dmitry-spravko-A0-tT29jOfQ-unsplash.jpg';
-import jason from '../../assets/images/jason-leung-fV2G5KGNDg4-unsplash.jpg';
-import javier from '../../assets/images/javier-garcia-chavez-b1kNxnBrA6s-unsplash.jpg';
-import maeva from '../../assets/images/maeva-vigier-Ji3yQIhI4bg-unsplash.jpg';
-import sebastian from '../../assets/images/sebastian-schuster-yNKpCpQWwuc-unsplash.jpg';
-import takashiOne from '../../assets/images/takashi-s-EZ6ZSOf7PxA-unsplash.jpg';
-import takashiTwo from '../../assets/images/takashi-s-ob8G_qq1rkE-unsplash.jpg';
-import willianOne from '../../assets/images/willian-justen-de-vasconcellos-GHc2wTs_bVQ-unsplash.jpg';
-import willianTwo from '../../assets/images/willian-justen-de-vasconcellos-UlTixDLwlT0-unsplash.jpg';
-import willianThree from '../../assets/images/willian-justen-de-vasconcellos-VoAPtbH7xyI-unsplash.jpg';
-import willianFour from '../../assets/images/willian-justen-de-vasconcellos-qG7XzihnwzU-unsplash.jpg';
-import yousef from '../../assets/images/yousef-espanioly-2RcNhJLmFhQ-unsplash.jpg';
+const anastasiia = 'https://cdn.jsdelivr.net/gh/by0616/bybook@main/src/assets/images/anastasiia-buchinskaia-GLbsWvBQk_8-unsplash.jpg';
+const dan = 'https://cdn.jsdelivr.net/gh/by0616/bybook@main/src/assets/images/dan-begel-rTMMGtX482w-unsplash.jpg';
+const declan = 'https://cdn.jsdelivr.net/gh/by0616/bybook@main/src/assets/images/declan-sun-IeudDVfzH0o-unsplash.jpg';
+const dmitry = 'https://cdn.jsdelivr.net/gh/by0616/bybook@main/src/assets/images/dmitry-spravko-A0-tT29jOfQ-unsplash.jpg';
+const jason = 'https://cdn.jsdelivr.net/gh/by0616/bybook@main/src/assets/images/jason-leung-fV2G5KGNDg4-unsplash.jpg';
+const javier = 'https://cdn.jsdelivr.net/gh/by0616/bybook@main/src/assets/images/javier-garcia-chavez-b1kNxnBrA6s-unsplash.jpg';
+const maeva = 'https://cdn.jsdelivr.net/gh/by0616/bybook@main/src/assets/images/maeva-vigier-Ji3yQIhI4bg-unsplash.jpg';
+const sebastian = 'https://cdn.jsdelivr.net/gh/by0616/bybook@main/src/assets/images/sebastian-schuster-yNKpCpQWwuc-unsplash.jpg';
+const takashiOne = 'https://cdn.jsdelivr.net/gh/by0616/bybook@main/src/assets/images/takashi-s-EZ6ZSOf7PxA-unsplash.jpg';
+const takashiTwo = 'https://cdn.jsdelivr.net/gh/by0616/bybook@main/src/assets/images/takashi-s-ob8G_qq1rkE-unsplash.jpg';
+const willianOne = 'https://cdn.jsdelivr.net/gh/by0616/bybook@main/src/assets/images/willian-justen-de-vasconcellos-GHc2wTs_bVQ-unsplash.jpg';
+const willianTwo = 'https://cdn.jsdelivr.net/gh/by0616/bybook@main/src/assets/images/willian-justen-de-vasconcellos-UlTixDLwlT0-unsplash.jpg';
+const willianThree = 'https://cdn.jsdelivr.net/gh/by0616/bybook@main/src/assets/images/willian-justen-de-vasconcellos-VoAPtbH7xyI-unsplash.jpg';
+const willianFour = 'https://cdn.jsdelivr.net/gh/by0616/bybook@main/src/assets/images/willian-justen-de-vasconcellos-qG7XzihnwzU-unsplash.jpg';
+const yousef = 'https://cdn.jsdelivr.net/gh/by0616/bybook@main/src/assets/images/yousef-espanioly-2RcNhJLmFhQ-unsplash.jpg';
 
 const photos = [
   { id: 'coastline', src: anastasiia, caption: 'Coastline hush', credit: 'Anastasiia Buchinskaia', size: 'wide' },

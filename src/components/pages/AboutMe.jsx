@@ -1,9 +1,9 @@
 import React from "react";
 import "./AboutMe.css";
 
-import lukaImg from "../../assets/images/luka.jpg";
-import stefanieImg from "../../assets/images/stefanie.jpg";
-import runningImg from "../../assets/images/running.jpg";
+const lukaImg = "https://cdn.jsdelivr.net/gh/by0616/bybook@main/src/assets/images/luka.jpg";
+const stefanieImg = "https://cdn.jsdelivr.net/gh/by0616/bybook@main/src/assets/images/stefanie.jpg";
+const runningImg = "https://cdn.jsdelivr.net/gh/by0616/bybook@main/src/assets/images/running.jpg";
 
 const sections = [
   {

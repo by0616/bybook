@@ -1,6 +1,6 @@
 import React from "react";
 import "./Blog.css";
-import latexPdf from "../../assets/pdfs/latex-talk-handout.pdf";
+const latexPdf = "https://cdn.jsdelivr.net/gh/by0616/bybook@main/src/assets/pdfs/latex-talk-handout.pdf";
 
 const Blog = () => {
   return (
