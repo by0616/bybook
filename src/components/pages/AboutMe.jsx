@@ -1,9 +1,9 @@
 import React from "react";
 import "./AboutMe.css";
 
-import lukaImg from "../../images/luka.jpg";
-import stefanieImg from "../../images/stefanie.jpg";
-import runningImg from "../../images/running.jpg";
+import lukaImg from "../../assets/images/luka.jpg";
+import stefanieImg from "../../assets/images/stefanie.jpg";
+import runningImg from "../../assets/images/running.jpg";
 
 const sections = [
   {
