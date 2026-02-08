@@ -19,7 +19,7 @@ const Blog = () => {
           </p>
           <p>
             This website is established with React, thanks to the MIT Weblab Project, which introduced me to web development. Some features like snapping scroll aren't
-            yet developed. I would add a backend side to enable user interaction and data persistence. I hope I can keep updating this blog and share my thoughts and
+            yet developed. I will add a backend side to enable user interaction and data persistence. I hope I can keep updating this blog and share my thoughts and
             experiences with you all.
           </p>
           <p>
